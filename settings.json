@@ -1,0 +1,102 @@
+{
+  "sites": [
+    {
+      "url": "https://forpost.lviv.ua",
+      "news_url": "https://forpost.lviv.ua/novyny",
+      "news_selector": ".page-header a",
+      "next_page": ".pagination-next a",
+      "pagination": "False"
+    },
+    {
+      "url": "https://zaxid.net",
+      "news_url": "https://zaxid.net/news/",
+      "news_selector": ".default-news-list a",
+      "next_page": ".pager_list li.active + li a",
+      "pagination": "False"
+    },
+    {
+      "url": "https://varta1.com.ua",
+      "news_url": "https://varta1.com.ua/category/novyny/",
+      "news_selector": "main .entry-title a",
+      "next_page": "page/",
+      "pagination": "True"
+    },
+    {
+      "url": "https://4studio.com.ua",
+      "news_url": "https://4studio.com.ua/novyny/",
+      "news_selector": ".item-title a",
+      "next_page": ".next",
+      "pagination": "False"
+    },
+    {
+      "url": "https://dyvys.info",
+      "news_url": "https://dyvys.info/category/regions/",
+      "news_selector": ".td-main-content .entry-title a",
+      "next_page": "page/",
+      "pagination": "True"
+    },
+    {
+      "url": "https://tl-news.com.ua",
+      "news_url": "https://tl-news.com.ua/blog/category/news/",
+      "news_selector": ".entry-title a",
+      "next_page": "page/",
+      "pagination": "True"
+    },
+    {
+      "url": "https://galinfo.com.ua",
+      "news_url": "https://galinfo.com.ua/news/",
+      "news_selector": ".newslist time + a",
+      "next_page": "?pg=",
+      "pagination": "True"
+    },
+    {
+      "url": "https://dailylviv.com",
+      "news_url": "https://dailylviv.com/news/",
+      "news_selector": "div.span6 a.title",
+      "next_page": ".pages li:last-of-type a",
+      "pagination": "False"
+    },
+    {
+      "url": "https://varta.com.ua",
+      "news_url": "https://varta.com.ua/news/lviv/",
+      "news_selector": ".text_str_news a",
+      "next_page": "page=",
+      "pagination": "True"
+    },
+    {
+      "url": "https://lvnews.org.ua",
+      "news_url": "https://lvnews.org.ua/Section/archive/",
+      "news_selector": ".archive-item a",
+      "next_page": ".pagination li:last-of-type a",
+      "pagination": "False"
+    },
+    {
+      "url": "https://leopolis.news",
+      "news_url": "https://leopolis.news/list/1/",
+      "news_selector": ".col-9 a",
+      "next_page": ".page_number:last-of-type a",
+      "pagination": "False"
+    },
+    {
+      "url": "https://inlviv.in.ua",
+      "news_url": "https://inlviv.in.ua/ukraine/",
+      "news_selector": ".post-title a",
+      "next_page": "page/",
+      "pagination": "True"
+    },
+    {
+      "url": "https://www.lmn.in.ua",
+      "news_url": "https://www.lmn.in.ua/category/society/",
+      "news_selector": ".m-10 a",
+      "next_page": "page/",
+      "pagination": "True"
+    },
+    {
+      "url": "https://lemberg-news.info",
+      "news_url": "https://lemberg-news.info/",
+      "news_selector": ".post .entry-title a",
+      "next_page": "page/",
+      "pagination": "True"
+    }
+  ]
+}
