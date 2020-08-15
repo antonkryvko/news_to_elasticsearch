@@ -5,98 +5,190 @@
       "news_url": "https://forpost.lviv.ua/novyny",
       "news_selector": ".page-header a",
       "next_page": ".pagination-next a",
-      "pagination": "False"
+      "pagination": "False",
+      "title": "h1",
+      "date": "time",
+      "text": ".articleBody"
     },
     {
       "url": "https://zaxid.net",
       "news_url": "https://zaxid.net/news/",
       "news_selector": ".default-news-list a",
       "next_page": ".pager_list li.active + li a",
-      "pagination": "False"
+      "pagination": "False",
+      "title": "h1",
+      "date": "div.info_wrap span.date",
+      "text": "div#newsSummary"
     },
     {
       "url": "https://varta1.com.ua",
       "news_url": "https://varta1.com.ua/category/novyny/",
       "news_selector": "main .entry-title a",
       "next_page": "page/",
-      "pagination": "True"
+      "pagination": "True",
+      "title": "h1",
+      "date": "",
+      "text": "main div.entry-content"
     },
     {
       "url": "https://4studio.com.ua",
       "news_url": "https://4studio.com.ua/novyny/",
       "news_selector": ".item-title a",
       "next_page": ".next",
-      "pagination": "False"
+      "pagination": "False",
+      "title": "h1",
+      "date": ".single-text .item-date",
+      "text": "div.text"
     },
     {
       "url": "https://dyvys.info",
       "news_url": "https://dyvys.info/category/regions/",
       "news_selector": ".td-main-content .entry-title a",
       "next_page": "page/",
-      "pagination": "True"
+      "pagination": "True",
+      "title": "h1",
+      "date": "header time.entry-date",
+      "text": "article"
     },
     {
       "url": "https://tl-news.com.ua",
       "news_url": "https://tl-news.com.ua/blog/category/news/",
       "news_selector": ".entry-title a",
       "next_page": "page/",
-      "pagination": "True"
+      "pagination": "True",
+      "title": "h1",
+      "date": "header div.date",
+      "text": "div.entry-content"
     },
     {
       "url": "https://galinfo.com.ua",
       "news_url": "https://galinfo.com.ua/news/",
       "news_selector": ".newslist time + a",
       "next_page": "?pg=",
-      "pagination": "True"
+      "pagination": "True",
+      "title": "header h1",
+      "date": "div.date span b:nth-of-type(2), div.date span time",
+      "text": "article"
     },
     {
       "url": "https://dailylviv.com",
       "news_url": "https://dailylviv.com/news/",
       "news_selector": "div.span6 a.title",
       "next_page": ".pages li:last-of-type a",
-      "pagination": "False"
+      "pagination": "False",
+      "title": "header.insideTitleBox h1",
+      "date": "article.span11 p.date",
+      "text": "div.description"
     },
     {
       "url": "https://varta.com.ua",
       "news_url": "https://varta.com.ua/news/lviv/",
       "news_selector": ".text_str_news a",
       "next_page": "page=",
-      "pagination": "True"
+      "pagination": "True",
+      "title": "h1",
+      "date": "div.material div.data_material:first-of-type",
+      "text": "div.text_material"
     },
     {
       "url": "https://lvnews.org.ua",
       "news_url": "https://lvnews.org.ua/Section/archive/",
       "news_selector": ".archive-item a",
       "next_page": ".pagination li:last-of-type a",
-      "pagination": "False"
+      "pagination": "False",
+      "title": "h1.title",
+      "date": "div.publish-info span",
+      "text": "div.post-text-container"
     },
     {
       "url": "https://leopolis.news",
       "news_url": "https://leopolis.news/list/1/",
       "news_selector": ".col-9 a",
       "next_page": ".page_number:last-of-type a",
-      "pagination": "False"
+      "pagination": "False",
+      "title": "h1",
+      "date": "p.one-date",
+      "text": "div.size-text"
     },
     {
       "url": "https://inlviv.in.ua",
       "news_url": "https://inlviv.in.ua/ukraine/",
       "news_selector": ".post-title a",
       "next_page": "page/",
-      "pagination": "True"
-    },
-    {
-      "url": "https://www.lmn.in.ua",
-      "news_url": "https://www.lmn.in.ua/category/society/",
-      "news_selector": ".m-10 a",
-      "next_page": "page/",
-      "pagination": "True"
+      "pagination": "True",
+      "title": "h1",
+      "date": "header time.post-date",
+      "text": "div.post-content"
     },
     {
       "url": "https://lemberg-news.info",
       "news_url": "https://lemberg-news.info/",
       "news_selector": ".post .entry-title a",
       "next_page": "page/",
-      "pagination": "True"
+      "pagination": "True",
+      "title": "h1",
+      "date": "header div.date a",
+      "text": "div.entry-content"
+    },
+    {
+      "url": "https://nashemisto.dp.ua",
+      "news_url": "https://nashemisto.dp.ua/category/novosti/",
+      "news_selector": ".news-item a",
+      "next_page": "page/",
+      "pagination": "True",
+      "title": "h1",
+      "date": "header time",
+      "text": "main.mb-4"
+    },
+    {
+      "url": "https://gorod.dp.ua",
+      "news_url": "https://gorod.dp.ua/news/archive",
+      "news_selector": ".nov-list a.dark3",
+      "next_page": "?page=",
+      "pagination": "True",
+      "title": "h1.title_news",
+      "date": "span.nov-date",
+      "text": ".newsbody"
+    },
+    {
+      "url": "https://opentv.media",
+      "news_url": "https://opentv.media/category/news/",
+      "news_selector": ".post-title a",
+      "next_page": "page/",
+      "pagination": "True",
+      "title": "article.post h1.post-title",
+      "date": "article.post p.post-byline",
+      "text": "article.post div.entry-inner"
+    },
+    {
+      "url": "https://dpchas.com.ua/",
+      "news_url": "https://dpchas.com.ua/new-stories/",
+      "news_selector": ".views-field-title a",
+      "next_page": "?page=",
+      "pagination": "True",
+      "title": ".page-header span",
+      "date": ".article-create-date",
+      "text": "div[property=\"schema:text\"]"
+    },
+    {
+      "url": "https://dnepr.express",
+      "news_url": "https://dnepr.express/",
+      "news_selector": "a.post",
+      "next_page": "?page=",
+      "pagination": "True",
+      "title": "h1",
+      "date": "article.single-post p.mb-0",
+      "text": "div.content"
+    },
+    {
+      "url": "https://34.ua",
+      "news_url": "https://34.ua/ru/novosti_t2/",
+      "news_selector": "a.news-block",
+      "next_page": "page-",
+      "pagination": "True",
+      "title": ".news-page-title h1",
+      "date": ".news-statistics span",
+      "text": ".news-wrapper"
     }
   ]
 }

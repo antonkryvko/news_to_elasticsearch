@@ -7,8 +7,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-WEBSITE_URL = "https://lemberg-news.info"
-
+WEBSITE_URL = ''
 
 def get_sequence_number_from_settings():
     with open('settings.json', 'r') as settings_file:
@@ -47,7 +46,7 @@ def download_with_pagination(news_url, news_selector, next_page_selector):
             print_urls_to_file(urls_on_page)
             print(next_page)
             i += 1
-        except AttributeError:
+        except IndexError:
             break
     print('News from {} downloaded.'.format(WEBSITE_URL))
 
@@ -71,14 +70,6 @@ def download_without_pagination(news_url, news_selector, next_page_selector):
         except IndexError:
             break
     print('News from {} downloaded.'.format(WEBSITE_URL))
-
-
-def handle_exception_in_next_page_url(soup, news_url, next_page_selector):
-    try:
-        news_url = WEBSITE_URL + soup.select(next_page_selector)[0]['href']
-    except requests.exceptions.MissingSchema:
-        news_url = news_url + soup.select(next_page_selector)[0]['href']
-    return news_url
 
 
 def print_urls_to_file(urls_on_page):

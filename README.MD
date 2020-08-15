@@ -31,11 +31,16 @@ target:
  common mode);
 * `pagination` - a boolean flag which switches between pagination and common mode. Pagination mode is when you iterate
 through article directory (ex. /page/1, page/2, page/n). Common mode uses when you "click" on next-page button. Which
-mode to choose depends from you and website's layout.
+mode to choose depends from you and website's layout;
+* `title` - CSS-selector shows at article title;
+* `date` - CSS-selector shows at date and time. In case it's impossible to determine appropriate selector, script takes
+date from <meta> tag;
+* `text` - CSS-selector shows at article text. Doesn't grab links and images.
 
-Then enter website address, you've mentioned in `url` at `WEBSITE` variable in both `.py` files. It must be the same,
-because it's used for linking settings.
+Then enter website address, you've mentioned in `url` into `WEBSITE` variable in both `.py` files. It must be the same,
+because it's used for linking settings. Enter Elasticsearch username and password into `ELASTIC_USER` and
+`ELASTIC_PASSWORD` variable.
 
 Doing this, start `download_urls.py`. It scrapes all links for article and stores them into `url.txt` file.
-After script completion, start `download_articles.py`. It takes `url.txt`, downloads pages by links and stores its
-content into Elasticsearch. If Kibana was configured correctly, you would watch your data at port 5601.
+After script completion, start `download_articles.py`. It takes `FILE_WITH_URLS` variable, downloads pages by links and
+stores its content into Elasticsearch. If Kibana was configured correctly, you would watch your data at port 5601.
