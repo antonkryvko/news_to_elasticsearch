@@ -53,7 +53,7 @@
     {
       "url": "https://tl-news.com.ua",
       "news_url": "https://tl-news.com.ua/blog/category/news/",
-      "news_selector": ".entry-title a",
+      "news_selector": "header.entry-header h2 a",
       "next_page": "page/",
       "pagination": "True",
       "title": "h1",
@@ -82,10 +82,10 @@
     },
     {
       "url": "https://varta.com.ua",
-      "news_url": "https://varta.com.ua/news/lviv/",
-      "news_selector": ".text_str_news a",
-      "next_page": "page=",
-      "pagination": "True",
+      "news_url": "https://varta.com.ua/news/arhive/20150131",
+      "news_selector": ".one_str_news a",
+      "next_page": "a.fl",
+      "pagination": "False",
       "title": "h1",
       "date": "div.material div.data_material:first-of-type",
       "text": "div.text_material"
@@ -129,6 +129,16 @@
       "title": "h1",
       "date": "header div.date a",
       "text": "div.entry-content"
+    },
+    {
+      "url": "https://www.lmn.in.ua",
+      "news_url": "https://www.lmn.in.ua/category/podiyi/",
+      "news_selector": "a.h5",
+      "next_page": "page/",
+      "pagination": "True",
+      "title": "h1",
+      "date": "div.simple-item div.news-date",
+      "text": "div.col-md-9"
     },
     {
       "url": "https://nashemisto.dp.ua",
@@ -187,7 +197,7 @@
       "next_page": "page-",
       "pagination": "True",
       "title": ".news-page-title h1",
-      "date": ".news-statistics span",
+      "date": ".news-statistics",
       "text": ".news-wrapper"
     }
   ]
