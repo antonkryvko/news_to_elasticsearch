@@ -199,6 +199,26 @@
       "title": ".news-page-title h1",
       "date": ".news-statistics",
       "text": ".news-wrapper"
+    },
+    {
+      "url": "https://www.032.ua",
+      "news_url": "",
+      "news_selector": "",
+      "next_page": "",
+      "pagination": "",
+      "title": "h1",
+      "date": "div.article-info__time",
+      "text": "div.col-sm-9"
+    },
+    {
+      "url": "https://dp.informator.ua",
+      "news_url": "",
+      "news_selector": "",
+      "next_page": "",
+      "pagination": "",
+      "title": "h1",
+      "date": "header time",
+      "text": "div#content-main.left"
     }
   ]
 }
