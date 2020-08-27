@@ -219,6 +219,46 @@
       "title": "h1",
       "date": "header time",
       "text": "div#content-main.left"
+    },
+    {
+      "url": "https://dv-gazeta.info",
+      "news_url": "https://dv-gazeta.info/dneprnews/",
+      "news_selector": "div.post-title a",
+      "next_page": "page/",
+      "pagination": "True",
+      "title": "h1",
+      "date": "div.postmetadata span:nth-of-type(2)",
+      "text": "div#text"
+    },
+    {
+      "url": "https://dnepr.news",
+      "news_url": "https://dnepr.news/news/",
+      "news_selector": "a.publicLink",
+      "next_page": "start=",
+      "pagination": "True",
+      "title": "h1",
+      "date": "div.date span",
+      "text": "div.text"
+    },
+    {
+      "url": "https://www.rbc.ua",
+      "news_url": "https://www.rbc.ua/rus/region/dnipropetrovsk/1",
+      "news_selector": "a.news-feed-tag__item",
+      "next_page": "a.next",
+      "pagination": "False",
+      "title": "h1",
+      "date": "span.publication-breadcrumbs__date",
+      "text": "div.publication-sticky-container"
+    },
+    {
+      "url": "https://11tv.dp.ua",
+      "news_url": "https://11tv.dp.ua/news/",
+      "news_selector": "h3.article-title a",
+      "next_page": "page/",
+      "pagination": "True",
+      "title": "h1",
+      "date": "header.entry-header span.posts-date",
+      "text": "div.entry-content"
     }
   ]
 }

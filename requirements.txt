@@ -1,6 +1,6 @@
-beautifulsoup4==4.9.1
-bs4==0.0.1
-elasticsearch==7.8.1
-requests==2.24.0
-python-dateutil~=2.8.1
+beautifulsoup4
+bs4
+elasticsearch
+requests
+python-dateutil
 newspaper3k

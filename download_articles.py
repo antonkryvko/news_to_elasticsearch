@@ -93,5 +93,8 @@ def regexps_clean(string):
 
 
 if __name__ == '__main__':
-    sequence_number = get_sequence_number_from_settings()
-    download_articles(sequence_number)
+    try:
+        sequence_number = get_sequence_number_from_settings()
+        download_articles(sequence_number)
+    except requests.exceptions.MissingSchema:
+        print('Articles from {} downloaded.'.format(WEBSITE_URL))
