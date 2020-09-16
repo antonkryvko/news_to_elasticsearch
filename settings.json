@@ -259,6 +259,36 @@
       "title": "h1",
       "date": "header.entry-header span.posts-date",
       "text": "div.entry-content"
+    },
+    {
+      "url": "https://056.ua",
+      "news_url": "https://www.056.ua/news/",
+      "news_selector": "",
+      "next_page": "",
+      "paginaton": "",
+      "title": "h1",
+      "date": "div.article-info__time",
+      "text": "div.article-text"
+    },
+    {
+      "url": "https://dnepr.info",
+      "news_url": "https://dnepr.info/news/",
+      "news_selector": "",
+      "next_page": "",
+      "pagination": "",
+      "title": "h1",
+      "date": "div.holder-news-top-data div.date",
+      "text": "div.txt-holder"
+    },
+    {
+      "url": "https://portal.lviv.ua",
+      "news_url": "https://portal.lviv.ua/news/",
+      "news_selector": "",
+      "next_page": "",
+      "pagination": "",
+      "title": "h1",
+      "date": "div.article-text",
+      "text": "div.article-content"
     }
   ]
 }
