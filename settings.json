@@ -289,6 +289,16 @@
       "title": "h1",
       "date": "div.article-text",
       "text": "div.article-content"
+    },
+    {
+      "url": "https://vgolos.com.ua",
+      "news_url": "https://vgolos.com.ua/news/",
+      "news_selector": "",
+      "next_page": "",
+      "pagination": "",
+      "title": "h1",
+      "date": "div.single-top-head span.item-date",
+      "text": "div.text"
     }
   ]
 }

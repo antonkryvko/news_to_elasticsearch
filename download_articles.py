@@ -20,7 +20,7 @@ ELASTIC_PASSWORD = ''
 
 es_client = Elasticsearch([{'host': 'localhost', 'port': 9200, 'http_auth': (ELASTIC_USER, ELASTIC_PASSWORD)}])
 if es_client.ping():
-    print('Connected to ELasticsearch')
+    print('Connected to Elasticsearch')
 else:
     print('Can\'t connect to Elasticsearch')
 
